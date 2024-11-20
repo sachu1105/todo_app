@@ -1,10 +1,11 @@
-function App() {
+// src/App.jsx
+const App = () => {
 
   return (
-    <div>
-      <h1>hello</h1>
+    <div className="max-w-3xl mx-auto p-6">
+      
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
