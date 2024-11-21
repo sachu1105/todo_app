@@ -9,6 +9,8 @@ The **Todo Application** is designed to streamline task management with a range 
 - [Usage](#usage)
 - [Folder Structure](#folder-structure)
 - [API Routes](#api-routes)
+- [Screenshots](#screenshots)
+
 
 ## Features
 - **CRUD Functionality**: Manage tasks with **create**, **read**, **update**, and **delete** operations.
@@ -70,28 +72,7 @@ Use the application to add, update, delete, or toggle tasks.
 
 ## Folder Structure
 
-
-**Todo_app/**
-├── frontend/                  # Frontend React app
-│   ├── src/
-│   │   ├── components/        # React components
-│   │   │   ├── Task.jsx       # Component to display a single task
-│   │   │   ├── TaskForm.jsx   # Component for the task input form
-│   │   │   ├── TaskList.jsx   # Component to display the list of tasks
-│   │   ├── App.jsx            # Main app component
-│   │   ├── axiosInstance.js   # Configured Axios instance for API requests
-│   │   ├── main.jsx           # React entry point
-│   ├── public/                # Static assets
-│   ├── vite.config.js         # Vite configuration file
-│   ├── package.json           # Frontend dependencies
-├── backend/                   # Backend Express app
-│   ├── models/
-│   │   ├── Task.js            # Mongoose schema for task management
-│   ├── routes/
-│   │   ├── taskRoutes.js      # Routes for task-related operations
-│   ├── server.js              # Express server entry point
-│   ├── package.json           # Backend dependencies
-├── README.md                  # Documentation
+![Folder Structure](folder_structure.png)
 
 **API Routes**
 Base URL: http://localhost:3000/api/tasks
@@ -154,3 +135,12 @@ Base URL: http://localhost:3000/api/tasks
     {
     "message": "Task deleted successfully"
     }
+
+### Screenshots
+Application UI design 
+
+![Screenshot 1](todo_basic.png)
+
+With tasks
+
+![Screenshot 1](todo_tasks.png)
