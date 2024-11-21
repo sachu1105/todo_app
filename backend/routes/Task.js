@@ -24,7 +24,7 @@ router.post('/', async (req, res) => {
     // Create a new task with text and completed status
     const newTask = new Task({
         text,
-        completed: completed || false, // If completed is not provided, default to false
+        completed: completed || false, 
     });
 
     // Try to save the task
@@ -48,7 +48,7 @@ router.put('/:id', async (req, res) => {
             completed
         }, { new: true }); // `new: true` will return the updated document
 
-        // If the task is not found
+        
         if (!updatedTask) {
             return res.status(404).json({ message: 'Task not found' });
         }
@@ -63,18 +63,18 @@ router.put('/:id', async (req, res) => {
 
 // Delete a task by ID
 router.delete('/:id', async (req, res) => {
-    const { id } = req.params; // Get the task ID from the URL
+    const { id } = req.params;
 
     try {
         // Find and delete the task by its ID
         const deletedTask = await Task.findByIdAndDelete(id);
 
-        // If the task is not found
+        
         if (!deletedTask) {
             return res.status(404).json({ message: 'Task not found' });
         }
 
-        // Respond with the deleted task details
+        
         res.status(200).json({ message: 'Task deleted successfully', task: deletedTask });
     } catch (err) {
         res.status(500).json({ message: err.message });

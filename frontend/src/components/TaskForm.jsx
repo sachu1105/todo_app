@@ -1,11 +1,8 @@
 import { useState, useEffect } from "react";
 import axiosInstance from "../axiosInstance";
 
-const TaskForm = ({
-  selectedTodo,
-  setSelectedTodo,
-  refresh,
-}) => {
+const TaskForm = ({selectedTodo,setSelectedTodo,refresh,}) => {
+
   const [taskText, setTaskText] = useState("");
 
   // Prefill the form if there's a task selected for editing

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import TaskForm from "./components/TaskForm"; // Import TaskForm
-import TaskList from "./components/TaskList"; // Import TaskList
-import axiosInstance from "./axiosInstance"; // Assuming you have this axios instance setup
+import TaskForm from "./components/TaskForm";
+import TaskList from "./components/TaskList"; 
+import axiosInstance from "./axiosInstance"; 
 
 const App = () => {
   const [todos, setTodos] = useState([]);
@@ -20,7 +20,7 @@ const App = () => {
   // Call fetchTasks when the component mounts
   useEffect(() => {
     fetchTasks();
-  }, []); // Empty dependency array means this runs once when the component mounts
+  }, []); 
 
   return (
     <div className="max-w-3xl mx-auto p-6">

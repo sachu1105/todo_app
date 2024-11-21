@@ -1,9 +1,7 @@
-import { useEffect } from "react";
 import Task from "./Task";
 
 const TaskList = ({ todos, setTodos, refresh, setSelectedTodo }) => {
-  // The tasks are now passed in via 'todos', no need for local state
-
+ 
   return (
     <div>
       <div className="container">
